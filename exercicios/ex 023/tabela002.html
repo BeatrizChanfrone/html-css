@@ -11,14 +11,35 @@
        table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
        }
        td, th{
-        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 0.685);
         padding: 10px;
        }
+       caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+       }
        thead, tfoot{
-        background-color: gray;
+        background-color: rgb(36, 35, 35);
         color: white;
+       
+       }
+       thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: rgb(36, 35, 35);
+       }
+       tbody > tr:nth-child(odd){
+        background-color: white;
+        
+       }
+       tbody > tr:nth-child(even) {
+        background-color: rgba(128, 128, 128, 0.658);
+        
        }
        td.num{
         text-align: right;
@@ -28,10 +49,11 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>população das unidades federativas</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 90px;">população</th>
             </tr>
         </thead>
         <tbody>
@@ -47,13 +69,68 @@
                 <td>rio de janeiro</td>
                 <td class="num">21 264 943</td>
             </tr>
+            <tr>
+                <td>parana</td>
+                <td class="num">98 870 984</td>
+            </tr>
+            <tr>
+                <td>bahia</td>
+                <td class="num">09 209 876</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">20 467 989</td>
+            </tr>
+            <tr>
+                <td>pernamabuco</td>
+                <td class="num">24 576 765</td>
+            <tr>
+                <td>ceara</td>
+                <td class="num">24 376 765</td>
+            </tr>
+            <tr>
+                <td>para</td>
+                <td class="num">76 543 987</td>
+            </tr>
+            <tr>
+                <td>santa catarina</td>
+                <td class="num">35 465 764</td>
+            </tr>
+            <tr>
+                <td>maranhão</td>
+                <td class="num">42 365 764</td>
+            </tr>
+            <tr>
+                <td>goías</td>
+                <td class="num">54 876 487</td>
+            </tr>
+            <tr>
+                <td>amazonas</td>
+                <td class="num">87 654 987</td>
+            </tr>
+            <tr>
+                <td>espirito santo</td>
+                <td class="num">23 876 987</td>
+            </tr>
+            <tr>
+                <td>paraíba</td>
+                <td class="num">76 543 765</td>
+            </tr>
+            <tr>
+                <td>rio grande do norte</td>
+                <td class="num">54 765 876</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>210 145</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi qui perspiciatis porro minus, molestiae assumenda quibusdam incidunt illum nam voluptatem in! Cupiditate molestias est quaerat minima? Rem, nobis odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt atque sapiente nemo repellendus. Consectetur, id adipisci quibusdam fugit cum eveniet obcaecati placeat exercitationem odio. Fugiat facilis repellendus id dolor ratione? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem rerum est necessitatibus a minima, ratione dolor voluptas porro sunt, obcaecati enim excepturi quibusdam iusto vero sint ut reprehenderit! Voluptates, harum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis minima cum quo laudantium! Id voluptatum sequi blanditiis veritatis cumque rerum recusandae soluta. Ipsa error harum nemo consequuntur quibusdam alias perspiciatis!
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum alias aliquam ad, numquam nulla non amet harum at, architecto fugiat, neque fugit debitis ea pariatur. Nihil eum accusamus consequatur sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellat impedit porro perspiciatis quam fugiat atque, quaerat id, laudantium sint dolore aspernatur sequi sunt dolores minima. Mollitia ipsam fuga eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate vel magnam maxime rem consequatur enim soluta est facilis adipisci iure quam, libero nisi nemo fugit officia dolorem beatae atque obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem mollitia commodi asperiores excepturi natus cumque. Quas, voluptatum quae quia reprehenderit temporibus distinctio consequatur assumenda possimus numquam expedita ipsum? Delectus, obcaecati!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde blanditiis, temporibus animi quibusdam ipsum, ullam, veniam alias autem totam exercitationem recusandae. Possimus est quod voluptatibus, eaque unde dolor aliquid dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi rem architecto error quas, voluptate officiis commodi magnam quis eligendi atque neque consectetur quisquam ducimus fuga enim repellat reiciendis optio voluptatibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem deserunt dicta aperiam sunt error placeat quisquam labore accusamus, alias adipisci suscipit perspiciatis reprehenderit enim? Tempora labore alias officiis placeat ducimus.</p>
 </body>
 </html>
